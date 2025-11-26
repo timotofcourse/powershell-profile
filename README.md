@@ -23,5 +23,5 @@ If the icons bug out install a nerd font, like 'Hack' and set it on the terminal
 
 **Do not make any changes to the `Microsoft.PowerShell_profile.ps1` file**, since it's hashed and automatically overwritten by any commits to this repository.
 
-After the profile is installed and active, run the `Edit-Profile` function to create a separate profile file [`profile.ps1`] for your current user. Add any custom code, and/or override VARIABLES/FUNCTIONS in `Microsoft.PowerShell_profile.ps1` by adding any of the following Variable or Function names:
+Edit the `profile.ps1` instead
 
