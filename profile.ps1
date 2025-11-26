@@ -12,3 +12,14 @@ Get-Theme_Override
 # Commands I want to run for every terminal window
 
 Get-Date
+
+# Check if my AutoHotKey compiler exists and add it to the path
+
+$autohotkey_compiler = "D:\Documents\AutoHotkey\ahkcompiler.py"
+
+function Compile-AHK {
+    if (!(Test-Path $autohotkey_compiler)) {
+        python $autohotkey_compiler $args
+    }
+}
+Set-Alias -Name ahkc -Value Compile-AHK
