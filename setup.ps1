@@ -19,9 +19,9 @@ function Test-InternetConnection {
 # Function to install Nerd Fonts
 function Install-NerdFonts {
     param (
-        [string]$FontName = "CascadiaCode",
-        [string]$FontDisplayName = "CaskaydiaCove NF",
-        [string]$Version = "3.2.1"
+        [string]$FontName = "Hack",
+        [string]$FontDisplayName = "Hack Nerd Font",
+        [string]$Version = "3.4.0"
     )
 
     try {
