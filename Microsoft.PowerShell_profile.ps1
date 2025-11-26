@@ -58,7 +58,7 @@ if ($repo_root_Override){
     # then use it instead
     $repo_root = $repo_root_Override
 } else {
-    $repo_root = "https://raw.githubusercontent.com/ChrisTitusTech"
+    $repo_root = "https://raw.githubusercontent.com/timotofcourse"
 }
 
 # Define the path to the file that stores the last execution time
@@ -285,21 +285,6 @@ function ff($name) {
 # Network Utilities
 function Get-PubIP { (Invoke-WebRequest http://ifconfig.me/ip).Content }
 
-# Open WinUtil full-release
-function winutil {
-    irm https://christitus.com/win | iex
-}
-
-# Open WinUtil dev-release
-function winutildev {
-	# If function "WinUtilDev_Override" is defined in profile.ps1 file
-    # then call it instead.
-    if (Get-Command -Name "WinUtilDev_Override" -ErrorAction SilentlyContinue) {
-        WinUtilDev_Override
-    } else {
-        irm https://christitus.com/windev | iex
-    }
-}
 
 # System Utilities
 function admin {
